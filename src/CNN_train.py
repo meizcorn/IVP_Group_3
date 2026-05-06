@@ -20,12 +20,12 @@ y = [] #labels
 
 
 
-data = torch.load("models/predictions.pth", weights_only=False)
+    # data = torch.load("models/predictions.pth", weights_only=False)
 
-y_true = data["y_true"]
-y_pred = data["y_pred"]
+    # y_true = data["y_true"]
+    # y_pred = data["y_pred"]
 
-plot_confusion_matrix(y_true, y_pred)
+    # plot_confusion_matrix(y_true, y_pred)
 #loop over all samples
 for _, row in df.iterrows():
     image_id = row["Id"]
