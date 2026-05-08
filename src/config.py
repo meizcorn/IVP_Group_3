@@ -17,21 +17,19 @@ OUTPUT_DIR.mkdir(exist_ok=True)
 MODEL_DIR.mkdir(exist_ok=True)
 
 
-# Model paths
+#model paths
 HOG_SVM_MODEL_PATH = MODEL_DIR / "hog_svm_model.joblib"
 
 
-
-# Image settings
 IMAGE_SIZE = (32, 32)
 
-# HOG settings
+#HOG settings
 HOG_ORIENTATIONS = 9
 HOG_PIXELS_PER_CELL = (4, 4)
 HOG_CELLS_PER_BLOCK = (2, 2)
 HOG_BLOCK_NORM = "L2-Hys"
 
 
-# Training settings
+#training variables
 RANDOM_STATE = 42
 VALIDATION_SIZE = 0.2

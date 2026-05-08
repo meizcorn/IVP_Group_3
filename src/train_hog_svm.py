@@ -90,12 +90,7 @@ def main():
     )
 
     print("\nTraining SVM model...")
-
-    # Start with this faster baseline.
     model = train_baseline_svm(X_train, y_train)
-
-    # If you want tuning, comment the line above and uncomment this:
-    # model = train_tuned_svm(X_train, y_train)
 
     print("\nEvaluating on validation set...")
     y_pred = model.predict(X_valid)
